@@ -1,0 +1,44 @@
+
+
+<div class="header">
+	<a href="">home</a>
+	<a href="">login</a>
+	<a href="">signup</a>
+	<a href="">cart</a>
+	<a href="">orders</a>
+	<a href="">profile</a>
+	<a href="">checkout</a>
+	<a href="">logout lalit</a>
+</div>
+<div class="main">
+	<div class="left">
+		<p *ngFor="let x of tags">{{x.t}} <span>{{x.c}}</span></p>
+	
+	</div>
+	<div class="right">
+		<div class="filters">
+			<button>id</button>
+			<button>old</button>
+			<button>new</button>
+			<button>rating</button>
+			<button>discount</button>
+			<input placeholder="search...">
+		</div>
+		<div class="products">
+			<div class="item" *ngFor="let x of products">
+				<img src="" alt="">
+				<div>{{x.title}}</div>
+				<div>{{x.old}}</div>
+				<div>{{x.new}}</div>
+				<div>rating</div>
+				<div class="discount">{{x.discount}}</div>
+				<div class="tags">{{x.tags}}</div>
+				<div class="cart-btn">add to cart</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	powered by <span>lalit sharma</span>
+</div>
